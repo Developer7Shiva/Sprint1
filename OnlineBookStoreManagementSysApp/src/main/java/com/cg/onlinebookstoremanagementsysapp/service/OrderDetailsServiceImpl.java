@@ -1,4 +1,4 @@
-package com.cg.bookstoremanagementsystem.service;
+package com.cg.onlinebookstoremanagementsysapp.service;
 
 import java.util.List;
 
@@ -6,11 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.cg.bookstoremanagementsystem.entity.OrderDetails;
-import com.cg.bookstoremanagementsystem.exception.ResourceNotFoundException;
-import com.cg.bookstoremanagementsystem.repository.OrderDetailsRepository;
-import com.cg.bookstoremanagementsystem.repository.OrderRepository;
-
+import com.cg.onlinebookstoremanagementsysapp.exception.*;
+import com.cg.onlinebookstoremanagementsysapp.entity.*;
+import com.cg.onlinebookstoremanagementsysapp.repository.*;
 
 
 @Service

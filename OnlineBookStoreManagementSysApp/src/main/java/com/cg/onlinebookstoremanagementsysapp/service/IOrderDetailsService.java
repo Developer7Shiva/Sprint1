@@ -1,11 +1,10 @@
-package com.cg.bookstoremanagementsystem.service;
+package com.cg.onlinebookstoremanagementsysapp.service;
 
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
-
-import com.cg.bookstoremanagementsystem.entity.OrderDetails;
-import com.cg.bookstoremanagementsystem.exception.ResourceNotFoundException;
+import com.cg.onlinebookstoremanagementsysapp.entity.OrderDetails;
+import com.cg.onlinebookstoremanagementsysapp.exception.*;
 
 
 

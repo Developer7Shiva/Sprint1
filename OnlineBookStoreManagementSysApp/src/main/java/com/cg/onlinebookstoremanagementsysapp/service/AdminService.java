@@ -61,22 +61,5 @@ public class AdminService implements IAdminService{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-//	@Override
-//	public String loginAdmin(String Uemail, String pass) {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-
-//	@Override
-//	public Admin exitstByEmail(String email, String pass) {
-//		Admin user = adminRepo.exitstByEmail(email,pass);
-//		if(user.getAdminEmail().equals(email)) {
-//			if(user.getAdminPassword().equals(pass)) {
-//				return user;
-//			}
-//		}
-//		return user;
-//	}
 	}
 

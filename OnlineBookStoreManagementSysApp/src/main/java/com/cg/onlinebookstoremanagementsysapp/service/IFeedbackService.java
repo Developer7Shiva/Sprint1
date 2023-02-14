@@ -13,7 +13,6 @@ public interface IFeedbackService {
 	public List<Feedback> listAllFeedbacks();
 	public Feedback getFeedBackById(Long fedId) throws ResourceNotFoundException;
 	public Feedback updateFeedBack(Feedback feed,Long fedId) throws ResourceNotFoundException;
-	public void deleteFeedBack(Long fedId);
     public Feedback getFeedBackByBookId(Long fedBookId);  
 	public List<Feedback> findByFeedBackReaderId(Long fedReaderId) ;
 	public List<Feedback> findByFeedBackOrderId(Long fedOrderId) ;

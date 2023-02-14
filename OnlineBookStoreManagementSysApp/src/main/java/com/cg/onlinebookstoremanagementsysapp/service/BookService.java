@@ -10,21 +10,22 @@ import com.cg.onlinebookstoremanagementsysapp.entity.Book;
 import com.cg.onlinebookstoremanagementsysapp.repository.BookRepository;
 @Service
 public class BookService implements IBookService{
-
+	
 	@Autowired
 	private BookRepository bookRepo;
+	
+	
 	@Override
 	public List<Book> getAllBooks() {
-		// TODO Auto-generated method stub
 		return bookRepo.findAll();
 	}
 
 	@Override
 	public Optional<Book> getBooksById(long bookId) {
-		// TODO Auto-generated method stub
 		return bookRepo.findById(bookId);
 	}
 
+	
 	@Override
 	public Optional<Book> addBook(Book book) {
 		if (bookRepo.existsById(book.getBookId())){
@@ -38,8 +39,8 @@ public class BookService implements IBookService{
 	public String updateBookById(Book bookId) {
 		if (bookRepo.existsById(bookId.getBookId())){
 			Book adUp =bookRepo.save(bookId);
-				if(adUp!=null)
-					return "Book Updated Successfully";
+			if(adUp!=null)
+				return "Book Updated Successfully";
 	    }else{
 	        return "Can't Update Book caused by Wrong information ";
 	    }
@@ -49,10 +50,10 @@ public class BookService implements IBookService{
 	@Override
 	public String deleteBookById(long bookId) {
 		if (bookRepo.existsById(bookId) && bookId!=0){
-	        bookRepo.deleteById(bookId);
-	        	return bookId + " deleted successfully!";
+			bookRepo.deleteById(bookId);
+	    	return bookId + "Deleted successfully!";
 	    }else{
-	        return "The data does not exist in records!";
+	        return "The Book does not exist in records!";
 	    }
 	    
 	}

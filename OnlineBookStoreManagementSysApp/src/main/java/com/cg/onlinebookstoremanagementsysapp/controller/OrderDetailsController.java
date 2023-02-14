@@ -31,7 +31,7 @@ public class OrderDetailsController {
 	
 	//save order details with corresponded orderId
 	@PostMapping("/orders/{orderId}/orderdetails")
-	public OrderDetails orderDetails(@PathVariable(value="orderId") String orderId,
+	public OrderDetails orderDtSave(@PathVariable(value="orderId") String orderId,
 			@Validated @RequestBody OrderDetails orderDetails) throws ResourceNotFoundException
 	{
 		return orderDetailsService.orderDetails(orderId, orderDetails);

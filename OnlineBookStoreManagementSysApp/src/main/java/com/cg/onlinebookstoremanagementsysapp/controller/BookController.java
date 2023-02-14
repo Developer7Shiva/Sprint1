@@ -49,7 +49,6 @@ import com.cg.onlinebookstoremanagementsysapp.entity.Book;
 				else {
 					return "Book Updated Successfully";
 				}
-
 		}	
 		@DeleteMapping("/{book_id}")
 		public String deleteEmployeeById(@PathVariable("book_id") long book_id) {

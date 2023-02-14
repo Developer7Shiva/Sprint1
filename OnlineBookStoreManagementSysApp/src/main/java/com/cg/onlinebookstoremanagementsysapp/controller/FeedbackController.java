@@ -45,11 +45,6 @@ public class FeedbackController {
 		return feedbackService.updateFeedBack(feed, fedId);
 	}
 	
-	@DeleteMapping("/deletefeedback/{fedid}")
-	public void deleteFeedBack(@PathVariable("fedid") Long fedId) {
-		feedbackService.deleteFeedBack(fedId);
-	}
-	
 	@GetMapping("/getfeedback/{fedbookid}")
 	public Feedback getFeedBackByBookId(@PathVariable("fedbookid") Long fedBookId) throws ResourceNotFoundException{
 		return feedbackService.getFeedBackByBookId(fedBookId);
